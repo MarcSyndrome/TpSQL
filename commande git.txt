@@ -1,0 +1,45 @@
+
+-u => update
+-m => message
+-m -m => 1er m renomme le titre du message, le 2eme va etre le commentaire en dessous du titre
+
+
+git init ======> tu le fais une fois et c'est pour initialiser ton espace de travail/dossier/endroit ou tu te trouve
+get remote add ======> va syncroniser ton LOCAL avec ton REPOSITORY 
+git remote add origin https://github.com/MarcSyndrome/TpSQL.git
+
+git rm --cached  ( ex (.DS_Store) ) supprime dans le staging area et donc du remote 
+
+git add --all ===> ajoute tout les fichiers
+git add .  le point c'est pour add tout les fichiers + les extensions ( dossiers, fichiers .js/.php/.txt ectect)
+
+git commit -m -m ====> va mettre a jour ton REPOSITORY 
+
+git status =====> fait un point sur l'endroit ou tu trouve ( si les dossiers sont suivis ou pas)
+
+git push origin main ===> va push tes modifs sur la branche main 
+git push -u origin main ===> va push et update vers la branche main vers le GITHUB
+
+git branch -M main ====> va renommer la branche grace a -M
+
+git merge =====> va s'ocupper de fusionner EN LOCAL les changement effectués
+
+git pull =====> c'est pour fusionner de GITHUB VERS GIT les changements effectués 
+
+git checkout  ====> c'est pour switcher entre les branches/fichiers de l'utilisateur
+git switch =====> va faire la meme chose que checkout MAIS CEPANDAAAAAANT , les modifications seront conserver dans le transfert
+
+
+
+Nouveau Token => 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
+
+
+git clone https://github.com/MarcSyndrome/Pouet
+cd Pouet
+On sort de la connection potentielle
+git remote rm (nom genre origin)
+On se connecte au bon github
+git remote add origin https://MarcSyndrome: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@github.com/MarcSyndrome/Pouet
+git add requestTpJulio.sql 
+git commit -m " request sql pour julio" -m "create, insert"
+git push origin main
